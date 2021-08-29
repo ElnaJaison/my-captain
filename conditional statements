@@ -1,0 +1,31 @@
+#include 
+int main()
+{
+  char choice;
+  puts("food items:");
+  puts("a.pizza , rs - 239");
+  puts("b.burger , rs - 129");
+  puts("c.pasta , rs - 179");
+  puts("d.french fries , rs - 99);
+  puts("e.sandwich , rs - 149");
+  printf("Your choice: ");
+  scanf("%c",&choice);
+  printf("You've choosed for: ");
+  switch(choice)
+  {
+    case 'a':
+      printf(" pizza , rs - 239");
+    case 'b':
+      printf("burger , rs - 129 ");
+    case 'c':
+      printf(" pasta , rs - 179");
+    case 'd':
+      printf(" french fries , rs - 99");
+    case 'e':
+      printf("sandwich , rs - 149 ");
+        
+    default:
+      printf("you have chosen");
+  }
+  return(0);
+}
