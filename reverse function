@@ -1,0 +1,25 @@
+#include<stdio.h>
+void read(char A[]);
+int main()
+{
+	printf("enter the string");
+	char B[50];
+	gets(B);
+	read(B);
+	return 0;
+}
+
+void read(char A[])
+{
+	int i,s;
+	s=0;
+	i=0;
+	while(A[i]!='\0')
+	{
+	i++;
+	s++;
+    }
+	for(i=s-1;i>=0;i--)
+	printf("%c",A[i]);
+	
+}
